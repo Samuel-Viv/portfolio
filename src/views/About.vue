@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <img src="" alt="Samuel Vivier">
+    <img src="../components/icons/développeur web(1).png" alt="Samuel Vivier">
     <article id="a-propos">
     <h1>A propos </h1>
     <p>Passionné d'informatique depuis toujours, je me suis lancé dans l'univers captivant du développement web et mobile afin d'en faire mon metier.
@@ -33,10 +33,13 @@ h1{
 
 p{
     display: flex;
-    text-indent: 20px;
     text-align: justify;
     padding-left:30px ;
     padding-bottom: 20px;
     padding-right: 30px;
+}
+
+img{
+ width: 100%;
 }
 </style>

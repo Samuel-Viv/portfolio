@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+@font-face {
+    font-family:Raleway ;
+    src: url(./Font/Raleway-VariableFont_wght.woff);
+    src: url(./Font/Raleway-VariableFont_wght.ttf) format('truetype'),
+    url(./Font/Raleway-VariableFont_wght.otf) format('opentype'),
+    url(./Font/Raleway-Italic-VariableFont_wght.ttf) format('truetype'),
+    url(./Font/Raleway-Italic-VariableFont_wght.otf) format('opentype');
+    src: url(./Font/Raleway-Italic-VariableFont_wght.woff); 
+}
+
+*{
+    font-family: Raleway, sans-serif;
+}
+
+h1 h2 {
+    font-family: 'lato', sans-serif ;
+}
+
+header{
+    background-color:#782221 ; 
+    color: white;
+}
+
+ address{
+    background-color:#2c1d27;
+ }
+
+ .bloc_left{
+    background-color: #782221;
+}
+
+h3{
+    background-color:#dbc2a4 ;    
+}
+
+.bloc_left p, .bloc_left li{
+    color: white;
+}
+
+footer{
+    background-color: #782221;
+    color: white;
+}
+
