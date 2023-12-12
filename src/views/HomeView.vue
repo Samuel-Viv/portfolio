@@ -1,11 +1,13 @@
 <script setup>
 import About from '@/views/About.vue'
 import Contact from '@/views/Contact.vue'
+import Creation from '@/views/Creation.vue'
 </script>
 
 <template>
   <main>
-    <About/>
-    <Contact/>
+    <About />
+    <Creation />
+    <Contact />
   </main>
 </template>
