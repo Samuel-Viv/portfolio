@@ -18,7 +18,7 @@ export default {
                 <h2>{{ modaleData.name }}</h2>
                 <img :src="modaleData.image" :alt="modaleData.name">
                 <p>Créé le: {{ modaleData.creationDate }} </p>
-                <p>Voici mon <a :href="modaleData.lien" target="_blank"><b>Curriculum</b> </a> ainsi que le lien <a
+                <p>Vous trouverez ci joint mon projet <a :href="modaleData.lien" target="_blank"><b>projet</b> </a> ainsi que le lien <a
                         :href="modaleData.gitHub" target="_blank"><b>GitHub</b></a>.</p>
 
                 <p>Technologies:{{ modaleData.tech }}</p>
@@ -56,6 +56,8 @@ export default {
     background-color: #f3f3f3;
     top: 10%;
     padding: 40px;
+    color: black;
+    text-decoration: none;
 
 }
 

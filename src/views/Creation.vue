@@ -57,13 +57,13 @@ export default {
 </script>
 
 <template>
-    <div>
-        <h1>Mes Créations</h1>
+    <div id="block">
+        <h1 id="creation">Mes Créations</h1>
         <div id="row">
             <div>
                 <div class="boucle"  >
                     <div class="container" >
-                        <h1>CV</h1>
+                        <h2>CV</h2>
 
                         <module v-bind:revele="revele" v-bind:toggleModale="toggleModale"  :modaleData="modaleData[0]"></module>
                         <img src="../components/icons/cv.png" alt="cv" v-on:click="toggleModale" >
@@ -74,7 +74,7 @@ export default {
             <div>
                 <div class="boucle">
                     <div class="container">
-                        <h1>Cahier des Charges</h1>
+                        <h2>Cahier des Charges</h2>
 
                         <module v-bind:revele="revele" v-bind:toggleModale="toggleModale" :modaleData="modaleData[1]"></module>
                         <img src="../components/icons/CahierDesCharges.png" alt="Cahier des charges" v-on:click="toggleModale">
@@ -85,7 +85,7 @@ export default {
             <div>
                 <div class="boucle">
                     <div class="container">
-                        <h1>Dynamiser un formulaire</h1>
+                        <h2>Dynamiser un formulaire</h2>
 
                         <module v-bind:revele="revele" v-bind:toggleModale="toggleModale" :modaleData="modaleData[2]"></module>
                         <img src="../components/icons/dynamiserUnFormulaire.png" alt="Dynamiser un formulaire" v-on:click="toggleModale">
@@ -103,7 +103,7 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    padding-bottom: 20px;
 }
 
 .container {
@@ -121,5 +121,20 @@ img {
     border-radius: 20px;
     border: 2px solid black;
     cursor: pointer;
+}
+
+#block{
+    background-color: #191545 ;
+    color: white;
+    padding: 20px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+img:hover{
+    opacity: 0.7;
 }
 </style>
