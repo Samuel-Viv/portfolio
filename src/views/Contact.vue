@@ -5,30 +5,30 @@
 // Suppression des champs lors de la validation
 import { reactive, ref } from 'vue'
 
-const form = reactive ({
+const form = reactive({
     lastName: "",
     firstName: "",
     objet: "",
     message: ""
 });
 let errorMessage = ref("");
-let validMessage = ref("") 
+let validMessage = ref("")
 
-const submitForm = () =>{
-   if(!form.firstName || !form.lastName || !form.objet || !form.message){
-    errorMessage.value="Tous les champs doivent être remplis."
-    validMessage.value=""
-   } else { 
-    validMessage.value="Votre message à bien été envoyé"
-    errorMessage.value=""
-    console.log("Le message a été envoyé à l'adresse mail: samvivier22@gmail.com")
-   
-    form.firstName = ""
-    form.lastName = ""
-    form.objet = ""
-    form.message = ""
-}
-    return{
+const submitForm = () => {
+    if (!form.firstName || !form.lastName || !form.objet || !form.message) {
+        errorMessage.value = "Tous les champs doivent être remplis."
+        validMessage.value = ""
+    } else {
+        validMessage.value = "Votre message à bien été envoyé"
+        errorMessage.value = ""
+        console.log("Le message a été envoyé à l'adresse mail: samvivier22@gmail.com")
+
+        form.firstName = ""
+        form.lastName = ""
+        form.objet = ""
+        form.message = ""
+    }
+    return {
         form,
         errorMessage,
         validMessage,
@@ -39,40 +39,42 @@ const submitForm = () =>{
 </script>
 
 <template>
-    <article id="contact">
-    <form action="#" method="post" @submit.prevent="submitForm">
-        <h1>Contact</h1>
-        <!-- Message d'erreur -->
-        <p  v-if="errorMessage" class="error-message" > {{ errorMessage }}  </p>
-        <!-- Message à bien était envoyé -->
-        <p  v-if="validMessage" class="valid-message" > {{ validMessage }} </p>
-        <!-- Formulaire de contact -->
-        <div class="all-form">
-            <div class="name">
-                <div class="box1">
-                    <label for="last-name">Nom: </label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Nom" v-model="form.lastName">
-                </div>
+    <h1 id="contact">Contact</h1>
+    <article >
+        <form action="#" method="post" @submit.prevent="submitForm">
 
-                <div class="box1">
-                    <label for="first-name">Prénom: </label>
-                    <input type="text" name="first-name" id="first-name" placeholder="Prénom" v-model="form.firstName">
-                </div>
+            <!-- Message d'erreur -->
+            <p v-if="errorMessage" class="error-message"> {{ errorMessage }} </p>
+            <!-- Message à bien était envoyé -->
+            <p v-if="validMessage" class="valid-message"> {{ validMessage }} </p>
+            <!-- Formulaire de contact -->
+            <div class="all-form">
+                <div class="name">
+                    <div class="box1">
+                        <label for="last-name">Nom: </label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Nom" v-model="form.lastName">
+                    </div>
 
-            </div>
-            <div class="objet">
-                <div>
-                    <label for="objet">Objet: </label>
-                    <input type="text" name="objet" id="objet" placeholder="Objet" v-model="form.objet">
+                    <div class="box1">
+                        <label for="first-name">Prénom: </label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Prénom" v-model="form.firstName">
+                    </div>
+
                 </div>
+                <div class="objet">
+                    <div>
+                        <label for="objet">Objet: </label>
+                        <input type="text" name="objet" id="objet" placeholder="Objet" v-model="form.objet">
+                    </div>
+                </div>
+                <div class="message">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
+                        v-model="form.message"></textarea>
+                </div>
+                <input type="submit" value="Envoyer">
             </div>
-            <div class="message">
-                <label for="message">Message: </label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" v-model="form.message"></textarea>
-            </div>
-            <input type="submit" value="Envoyer">
-        </div>
-    </form>
+        </form>
     </article>
 </template>
 
@@ -82,12 +84,15 @@ form {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    
 }
 
 .all-form {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: auto;
+    width: 600px;
+    padding-bottom: 20px;
 }
 
 .all-form div {
@@ -147,4 +152,8 @@ input[type="submit"]:hover {
     background-color: rgba(0, 128, 0, 0.158);
 }
 
+h1{
+    display: flex;
+    justify-content: center;
+}
 </style>

@@ -8,7 +8,7 @@ import {  RouterView } from 'vue-router'
     <img alt="Logo" class="logo" src="./components/icons/logo1-removebg-preview.png" width="125" height="125" />
     <nav>
       <button class="bouton1"><a href="#a-propos">A propos</a></button>
-      <button class="bouton2"><a href="">Création</a></button>
+      <button class="bouton2"><a href="#creation">Création</a></button>
       <button class="bouton3"><a href="#contact">Contact</a></button>
     </nav>
   </header>
