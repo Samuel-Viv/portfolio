@@ -1,15 +1,15 @@
 <script setup>
-import {  RouterView } from 'vue-router'
+import { RouterLink ,RouterView } from 'vue-router'
 
 </script>
 
 <template>
   <header>
-    <img alt="Logo" class="logo" src="./components/icons/logo1-removebg-preview.png" width="125" height="125" />
+    <RouterLink to="/" exact><img alt="Logo" class="logo" src="./components/icons/logo1-removebg-preview.png" width="125" height="125" /></RouterLink>
     <nav>
-      <button class="bouton1"><a href="#a-propos">A propos</a></button>
-      <button class="bouton2"><a href="#creation">Création</a></button>
-      <button class="bouton3"><a href="#contact">Contact</a></button>
+      <button class="bouton1 " ><RouterLink to="/about">A propos</RouterLink></button>
+      <button class="bouton2 " ><RouterLink to="/creation">Création</RouterLink></button>
+      <button class="bouton3 " ><RouterLink to="/contact">Contact</RouterLink></button>
     </nav>
   </header>
 
@@ -95,5 +95,9 @@ figure{
   padding: 0;
   margin-right: 0;
   margin-left: 0;
+}
+
+.router-link-exact-active{
+  text-decoration: underline;
 }
 </style>
