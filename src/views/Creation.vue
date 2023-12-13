@@ -17,24 +17,27 @@ export default {
           image: "src/components/icons/cv.png",
           lien: "src/components/lien/cv/index2.html",
           gitHub: "https://github.com/Samuel-Viv/Creer_un_cv_en_ligne.git",
-          tech: "HTML5, CSS3 , Git, GitHub",
-          creationDate: "10/11/2023"
+          tech: " HTML5, CSS3 , Git, GitHub",
+          creationDate: "10/11/2023",
+          detail:"Création d'un cv en HTLM et CSS, en respectant la charte graphique."
         },
         {
           name: "Cahier des Charges",
           image: "src/components/icons/CahierDesCharges.png",
           lien: "src/components/lien/cahierDesCharges/cahier-des-charges.pdf",
           gitHub: "https://github.com/Samuel-Viv/cahierDesCharges.git",
-          tech: "Canva, Figma",
-          creationDate: "17/11/2023"
+          tech: " Canva, Figma",
+          creationDate: "17/11/2023",
+          detail:"Création d'un cahier des charges comprenant une présentation de l'entreprise avec différents concurrents dans leur domaine, le profil du client idéal, la maquette du site avec la charte graphique, les fonctionnalités du site, un devis, ainsi que les dates de livraison."
         },
         {
           name: "Dynamiser un formulaire",
           image: "src/components/icons/dynamiserUnFormulaire.png",
           lien: "src/components/lien/DynamiserUnFormulaire/index.html",
           gitHub: "https://github.com/Samuel-Viv/dynamiser-un-espace-commentaire.git",
-          tech: "HTML5, CSS3, JavaScript, Git, GitHub",
-          creationDate: "4/12/2023"
+          tech: " HTML5, CSS3, JavaScript, Git, GitHub",
+          creationDate: "4/12/2023",
+          detail: "Je devais dynamiser un formulaire afin que le nom, le prénom et le message aillent dans les commentaires. Cependant, si le formulaire n'était pas bien rempli, un message d'erreur devait s'afficher."
         }
       ],
         }
@@ -44,8 +47,8 @@ export default {
 
     },
     methods: {
-        toggleModale: function () {
-            this.revele = !this.revele
+        toggleModale: function (index) {
+            this.modaleData[index].revele = !this.modaleData[index].revele
         },
 
     }
@@ -57,38 +60,16 @@ export default {
 </script>
 
 <template>
-    <div id="block">
+    <div id="block" >
         <h1 id="creation">Mes Créations</h1>
-        <div id="row">
-            <div>
+        <div id="row"  >
+            <div v-for="(data, index) in modaleData" :key="index">
                 <div class="boucle"  >
-                    <div class="container" >
-                        <h2>CV</h2>
-
-                        <module v-bind:revele="revele" v-bind:toggleModale="toggleModale"  :modaleData="modaleData[0]"></module>
-                        <img src="../components/icons/cv.png" alt="cv" v-on:click="toggleModale" >
-
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="boucle">
                     <div class="container">
-                        <h2>Cahier des Charges</h2>
+                        <h2>{{ data.name }}</h2>
 
-                        <module v-bind:revele="revele" v-bind:toggleModale="toggleModale" :modaleData="modaleData[1]"></module>
-                        <img src="../components/icons/CahierDesCharges.png" alt="Cahier des charges" v-on:click="toggleModale">
-
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="boucle">
-                    <div class="container">
-                        <h2>Dynamiser un formulaire</h2>
-
-                        <module v-bind:revele="revele" v-bind:toggleModale="toggleModale" :modaleData="modaleData[2]"></module>
-                        <img src="../components/icons/dynamiserUnFormulaire.png" alt="Dynamiser un formulaire" v-on:click="toggleModale">
+                        <module v-bind:revele="data.revele" :toggleModale="() => toggleModale(index)" :modaleData="data" ></module>
+                        <img :src="data.image" :alt="data.name" v-on:click="() => toggleModale(index)">
 
                     </div>
                 </div>
@@ -135,6 +116,6 @@ h1{
 }
 
 img:hover{
-    opacity: 0.7;
+    box-shadow: 5px 5px 5px white;
 }
 </style>
