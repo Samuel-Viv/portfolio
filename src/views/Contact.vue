@@ -51,24 +51,24 @@ const submitForm = () => {
             <div class="all-form">
                 <div class="name">
                     <div class="box1">
-                        <label for="last-name">Nom: </label>
+                        <label for="last-name">Nom </label>
                         <input type="text" name="last-name" id="last-name" placeholder="Nom" v-model="form.lastName">
                     </div>
 
                     <div class="box1">
-                        <label for="first-name">Prénom: </label>
+                        <label for="first-name">Prénom </label>
                         <input type="text" name="first-name" id="first-name" placeholder="Prénom" v-model="form.firstName">
                     </div>
 
                 </div>
                 <div class="objet">
                     <div>
-                        <label for="objet">Objet: </label>
+                        <label for="objet">Objet </label>
                         <input type="text" name="objet" id="objet" placeholder="Objet" v-model="form.objet">
                     </div>
                 </div>
                 <div class="message">
-                    <label for="message">Message: </label>
+                    <label for="message">Message </label>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"
                         v-model="form.message"></textarea>
                 </div>

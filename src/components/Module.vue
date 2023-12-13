@@ -17,11 +17,12 @@ export default {
             <div id="block">
                 <h2>{{ modaleData.name }}</h2>
                 <img :src="modaleData.image" :alt="modaleData.name">
-                <p>Créé le: {{ modaleData.creationDate }} </p>
+                <p>{{ modaleData.detail }}</p>
+                <p>Créé le {{ modaleData.creationDate }} </p>
                 <p>Vous trouverez ci joint mon projet <a :href="modaleData.lien" target="_blank"><b>projet</b> </a> ainsi que le lien <a
                         :href="modaleData.gitHub" target="_blank"><b>GitHub</b></a>.</p>
 
-                <p>Technologies:{{ modaleData.tech }}</p>
+                <p>Technologies :{{ modaleData.tech }}</p>
             </div>
 
 
@@ -54,7 +55,7 @@ export default {
 .modale {
     position: absolute;
     background-color: #f3f3f3;
-    top: 10%;
+    top: 5%;
     padding: 40px;
     color: black;
     text-decoration: none;
@@ -88,7 +89,7 @@ export default {
     text-decoration: none;
 }
 img {
-    width: 50%;
+    width: 400px;
 
 }
 </style>
