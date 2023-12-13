@@ -4,8 +4,8 @@
 
 <template >
     <img src="../components/icons/développeur web(1).png" alt="Samuel Vivier">
-    <h1 id="a-propos">A propos </h1>
     <article >
+        <h1 id="a-propos">A propos </h1>
         <p>Passionné d'informatique depuis toujours, je me suis lancé dans l'univers captivant du développement web et mobile afin d'en faire mon métier.
         Pour moi, chaque ligne de code est un casse-tête à résoudre, une énigme à déchiffrer, et c'est précisément cette
         dimension ludique qui m'a attiré dans ce domaine.

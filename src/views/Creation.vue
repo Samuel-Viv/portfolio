@@ -60,7 +60,7 @@ export default {
 </script>
 
 <template>
-    <div id="block" >
+    <article id="block" >
         <h1 id="creation">Mes Créations</h1>
         <div id="row"  >
             <div v-for="(data, index) in modaleData" :key="index">
@@ -75,7 +75,7 @@ export default {
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 </template>
 
 <style scoped>

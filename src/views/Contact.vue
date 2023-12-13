@@ -39,8 +39,8 @@ const submitForm = () => {
 </script>
 
 <template>
-    <h1 id="contact">Contact</h1>
     <article >
+        <h1 id="contact">Contact</h1>
         <form action="#" method="post" @submit.prevent="submitForm">
 
             <!-- Message d'erreur -->
