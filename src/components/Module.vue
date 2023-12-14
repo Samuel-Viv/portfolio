@@ -19,7 +19,7 @@ export default {
                 <img :src="modaleData.image" :alt="modaleData.name">
                 <p>{{ modaleData.detail }}</p>
                 <p>Créé le {{ modaleData.creationDate }} </p>
-                <p>Vous trouverez ci joint mon projet <a :href="modaleData.lien" target="_blank"><b>projet</b> </a> ainsi que le lien <a
+                <p>Vous trouverez via le lien suivant mon <a :href="modaleData.lien" target="_blank"><b>projet</b> </a> ainsi que le lien <a
                         :href="modaleData.gitHub" target="_blank"><b>GitHub</b></a>.</p>
 
                 <p>Technologies :{{ modaleData.tech }}</p>
