@@ -19,7 +19,7 @@ export default {
           gitHub: "https://github.com/Samuel-Viv/Creer_un_cv_en_ligne.git",
           tech: " HTML5, CSS3 , Git, GitHub",
           creationDate: "10/11/2023",
-          detail:"Création d'un cv en HTLM et CSS, en respectant la charte graphique."
+          detail:"Dans le cadre d'un projet de formation, j'ai créé un CV en HTLM et CSS, en respectant la charte graphique donnée."
         },
         {
           name: "Cahier des Charges",
@@ -28,7 +28,7 @@ export default {
           gitHub: "https://github.com/Samuel-Viv/cahierDesCharges.git",
           tech: " Canva, Figma",
           creationDate: "17/11/2023",
-          detail:"Création d'un cahier des charges comprenant une présentation de l'entreprise avec différents concurrents dans leur domaine, le profil du client idéal, la maquette du site avec la charte graphique, les fonctionnalités du site, un devis, ainsi que les dates de livraison."
+          detail:"Dans le cadre d'un projet de formation, j'ai créé un cahier des charges comprenant une présentation de l'entreprise La Socketterie avec ses différents concurrents, le profil du client idéal, la maquette du site avec leur charte graphique, les fonctionnalités du site, un devis ainsi que les dates de livraison du projet."
         },
         {
           name: "Dynamiser un formulaire",
@@ -37,7 +37,7 @@ export default {
           gitHub: "https://github.com/Samuel-Viv/dynamiser-un-espace-commentaire.git",
           tech: " HTML5, CSS3, JavaScript, Git, GitHub",
           creationDate: "4/12/2023",
-          detail: "Je devais dynamiser un formulaire afin que le nom, le prénom et le message aillent dans les commentaires. Cependant, si le formulaire n'était pas bien rempli, un message d'erreur devait s'afficher."
+          detail: "J'ai dynamisé un formulaire afin que le nom, le prénom et le message aillent dans les commentaires. Cependant, si le formulaire n'est pas bien rempli, un message d'erreur doit s'afficher."
         }
       ],
         }
