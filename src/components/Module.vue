@@ -55,11 +55,10 @@ export default {
 .modale {
     position: absolute;
     background-color: #f3f3f3;
-    top: 5%;
     padding: 40px;
     color: black;
     text-decoration: none;
-
+    width: 80%;
 }
 
 .btn-modale {

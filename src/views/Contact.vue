@@ -39,7 +39,7 @@ const submitForm = () => {
 </script>
 
 <template>
-    <article >
+    <section>
         <h1 id="contact">Contact</h1>
         <form action="#" method="post" @submit.prevent="submitForm">
 
@@ -75,7 +75,7 @@ const submitForm = () => {
                 <input type="submit" value="Envoyer">
             </div>
         </form>
-    </article>
+    </section>
 </template>
 
 <style scoped>
