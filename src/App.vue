@@ -15,7 +15,7 @@ import { RouterLink ,RouterView } from 'vue-router'
 
   <RouterView />
   <footer>
-    <p class="up-date"><small>Dernière mise à jour le</small></p>
+    <p class="up-date"><small>Dernière mise à jour le 03/01/2024</small></p>
     <figure>
       <a href="https://www.linkedin.com" target="_blank"><img src="./components/icons/linkedin.svg" alt="Logo Linkedin"></a>
       <a href="https://twitter.com" target="_blank"><img src="./components/icons/twitter.svg" alt="Logo Twitter "></a>
