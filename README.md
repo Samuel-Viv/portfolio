@@ -59,4 +59,5 @@ Le header:
   - le texte"404"
   - Elle devra apparaitre dès lors qu'on essaaie d'accéder à autre chose que la page d'acceuil (router)
 
-Validateur W3C: vous trouverez les captures d'écran dans le fichier public/w3c 
+Validateur W3C: vous trouverez les captures d'écran dans le fichier public/w3c.
+Vous trouverez ci joint le Powerpoint dans ce dossier ainsi que le dossier pojet.
